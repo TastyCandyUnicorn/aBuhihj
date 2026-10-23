@@ -101,7 +101,7 @@ function sheduler(){
             </tr>
         `;
 
-        let blockWidth = bt[i] * 30;
+        let blockWidth = bt[i] * 20;
         ganttBlocksHTML += `
             <div class="gantt-box" style="width: ${blockWidth}px;">
                 P${pid[i]}
@@ -115,7 +115,7 @@ function sheduler(){
     
     let chartHTML = `
     <div class="gantt-container">
-        <h3>Gantt Chart (100px Height)</h3>
+        <h3>Gantt Chart</h3>
         <div class="gantt-row">
             ${ganttBlocksHTML}
         </div>
